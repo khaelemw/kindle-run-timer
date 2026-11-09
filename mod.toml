@@ -1,0 +1,23 @@
+[mod]
+id = "run-timer"
+name = "Run Timer"
+version = "1.0.0"
+author = "Kindle"
+description = "A speedrun clock on screen with splits for bosses and bonfires, compared with your best."
+api = 1
+games = ["ds3"]
+
+[permissions]
+modules = ["player", "ui"]
+
+[settings.show_clock]
+type = "bool"
+label = "Show the clock"
+description = "The run's time across the screen. Splits still count with it off."
+default = true
+
+[settings.split_on_bonfires]
+type = "bool"
+label = "Split at bonfires"
+description = "A split the first time you rest at each bonfire, as well as at bosses."
+default = true
